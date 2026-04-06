@@ -6,10 +6,8 @@ export default function Footer() {
       
       <div className="max-w-[1200px] mx-auto px-6">
 
-        {/* TOP GRID */}
         <div className="grid md:grid-cols-5 gap-10">
 
-          {/* BRAND */}
           <div className="md:col-span-2">
             <h2 className="text-2xl font-bold">DigiTools</h2>
             <p className="mt-4 text-white/70 max-w-sm">
@@ -18,7 +16,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* PRODUCT */}
           <div>
             <h3 className="font-semibold mb-4">Product</h3>
             <ul className="space-y-2 text-white/70">
@@ -29,7 +26,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* COMPANY */}
           <div>
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2 text-white/70">
@@ -40,7 +36,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* RESOURCES */}
           <div>
             <h3 className="font-semibold mb-4">Resources</h3>
             <ul className="space-y-2 text-white/70">
@@ -51,7 +46,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* SOCIAL */}
           <div>
             <h3 className="font-semibold mb-4">Social Links</h3>
             <div className="flex gap-3">
@@ -69,10 +63,8 @@ export default function Footer() {
 
         </div>
 
-        {/* DIVIDER */}
         <div className="border-t border-white/10 my-10"></div>
 
-        {/* BOTTOM */}
         <div className="flex flex-col md:flex-row justify-between items-center text-white/60 text-sm gap-4">
           <p>© 2026 Digitools. All rights reserved.</p>
 
