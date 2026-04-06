@@ -1,26 +1,30 @@
-import { ToastContainer, toast } from "react-toastify";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import Stats from "./components/Stats";
+import ToggleSection from "./components/ToggleSection";
+import Steps from "./components/Steps";
+import Pricing from "./components/Pricing";
+import CTA from "./components/CTA";
+import Footer from "./components/Footer";
+import CartProvider from "./context/CartContext";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-function App() {
+export default function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center gap-5 bg-base-200">
-
-      <button className="btn btn-primary" onClick={() => toast.success("Working")}>
-        Show Toast
-      </button>
-
-      <h1 className="text-3xl font-bold">Hello</h1>
-
-      <div className="card w-80 bg-base-100 shadow-xl">
-        <div className="card-body">
-          <h2 className="card-title">I am Shahriar.</h2>
-          <p>Setup is working perfectly.</p>
-        </div>
-      </div>
-
+    <>
+      <Navbar/>
+      <Hero />
+      <Stats />
+      <CartProvider>
+        <ToggleSection />
+      </CartProvider>
       <ToastContainer />
-    </div>
+      <Steps />
+      <Pricing />
+      <CTA />
+      <Footer />
+    </>
+    
   );
 }
-
-export default App;
