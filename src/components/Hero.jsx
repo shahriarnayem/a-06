@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="bg-base-200 py-20">
+    <section className="bg-base-200 py-10 px-5 md:py-12 lg:py-20">
       
       <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-10 items-center">
 

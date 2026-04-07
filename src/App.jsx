@@ -12,19 +12,17 @@ import "react-toastify/dist/ReactToastify.css";
 
 export default function App() {
   return (
-    <>
-      <Navbar/>
+    <CartProvider>
+      <Navbar />
       <Hero />
       <Stats />
-      <CartProvider>
-        <ToggleSection />
-      </CartProvider>
-      <ToastContainer />
+      <ToggleSection />
       <Steps />
       <Pricing />
       <CTA />
       <Footer />
-    </>
-    
+      <ToastContainer />
+    </CartProvider>
   );
 }
+

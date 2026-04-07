@@ -13,7 +13,6 @@ export default function ToggleSection() {
 
       <div className="max-w-[1200px] mx-auto px-6 text-center">
 
-        {/* TITLE */}
         <h2 className="text-3xl lg:text-4xl font-bold text-base-content">
           Premium Digital Tools
         </h2>
@@ -23,14 +22,13 @@ export default function ToggleSection() {
           to boost your productivity and creativity.
         </p>
 
-        {/* TOGGLE (PILL STYLE) */}
         <div className="mt-8 inline-flex bg-white rounded-full p-1 shadow">
 
           <button
             onClick={() => setView("products")}
             className={`px-6 py-2 rounded-full text-sm font-medium transition ${
               view === "products"
-                ? "bg-gradient-to-r from-purple-600 to-pink-500 text-white"
+                ? "bg-gradient-to-r from-purple-600 to-purple-900 text-white"
                 : "text-gray-500"
             }`}
           >
@@ -41,7 +39,7 @@ export default function ToggleSection() {
             onClick={() => setView("cart")}
             className={`px-6 py-2 rounded-full text-sm font-medium transition ${
               view === "cart"
-                ? "bg-gradient-to-r from-purple-600 to-pink-500 text-white"
+                ? "bg-gradient-to-r from-purple-600 to-purple-900 text-white"
                 : "text-gray-500"
             }`}
           >
@@ -50,7 +48,6 @@ export default function ToggleSection() {
 
         </div>
 
-        {/* CONTENT */}
         <div className="mt-12">
           {view === "products" ? (
             <div className="grid md:grid-cols-3 gap-5">
